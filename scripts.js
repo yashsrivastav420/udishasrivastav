@@ -1,1 +1,8 @@
 document.addEventListener('DOMContentLoaded',()=>{fetch('https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent('https://www.business-standard.com/rss/author/udisha-srivastav-106?ref=author')).then(res=>res.json()).then(data=>{const list=document.getElementById('feedList');if(data?.items?.length){data.items.slice(0,10).forEach(item=>{const li=document.createElement('li');li.innerHTML=`<a href="${item.link}" target="_blank">${item.title}</a>`;list.appendChild(li);});}else{list.innerHTML='<li>No articles found</li>';}}).catch(err=>{console.error(err);});});
+
+<script>
+  function toggleChat() {
+    const popup = document.getElementById("chatPopup");
+    popup.style.display = popup.style.display === "flex" ? "none" : "flex";
+  }
+</script>
