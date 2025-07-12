@@ -1173,4 +1173,28 @@ html {
     }
   }
 </style>
+<style>
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-image-placeholder {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;          /* makes the container circular */
+  overflow: hidden;            /* hides anything outside the circle */
+  border: 4px solid #007BFF;   /* optional border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* optional shadow */
+}
+
+.hero-image-placeholder img {
+  width: 75%;
+  height: 100%;
+  object-fit: cover;           /* fills circle nicely */
+  display: block;
+}
+</style>
 
